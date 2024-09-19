@@ -3,7 +3,7 @@ import { useState } from "react"
 
 export default function App(){
   const [level, setLevel]=useState(10);
-  const [image, setImage] = useState("หมูเด้ง.jpg");
+  const [image, setImage] = useState("https://www.khaosod.co.th/wpapp/uploads/2024/09/Nong-Moo-Deng4548-5.jpg");
 
    // ฟังก์ชันป้อนอาหารและเพิ่มค่า Level
    const feed = (foodValue) => {
@@ -12,7 +12,7 @@ export default function App(){
 
   // ถ้า level มากกว่า 100 จะเปลี่ยนเป็นรูปหมูกระทะ
       if (newlevel > 100) {
-        setImage("หมูกระทะ.jpg"); 
+        setImage("https://cdn.zipeventapp.com/blog/2023/06/2023-06-09_06-43-28_-1030x773.jpg"); 
       }
       return newlevel;
     });
@@ -32,19 +32,19 @@ export default function App(){
     
       <div className="food-container">
         <div className="food-item">
-          <img  className="image2" alt="แตงโม" src="แตงโม.jpg" />
+          <img  className="image2" alt="แตงโม" src="https://mthai.com/app/uploads/2021/08/watermelon-howto2.jpg" />
           <button className="food-button watermelon" onClick={() => feed(5)}>
             แตงโม (Level +5)
           </button>
         </div>
         <div className="food-item">
-          <img className="image3" alt="ฟักทอง" src="ฟักทอง.jpg" />
+          <img className="image3" alt="ฟักทอง" src="https://inwfile.com/s-gd/elcied.jpg" />
           <button className="food-button pumpkin" onClick={() => feed(10)}>
             ฟักทอง (Level +10)
           </button>
         </div>
         <div className="food-item">
-          <img className="image4" alt="หญ้า" src="หญ้า.jpg" />
+          <img className="image4" alt="หญ้า" src="https://i.pinimg.com/736x/ab/26/ba/ab26ba2af053326f22587e4847c3cc73.jpg" />
           <button className="food-button grass" onClick={() => feed(20)}>
             หญ้า (Level +20)
           </button>
